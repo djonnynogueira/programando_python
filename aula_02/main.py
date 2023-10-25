@@ -9,10 +9,27 @@ Laboratório 02 - Página 117
 
 """
 
-saque = int(input("Digite o valor para o saque (Multiplo de 5): "))
+saque = int(input("Digite o valor para saque (Multiplo de 5): ")) # 135
 
-print("")
-print('='*20)
-print("")
+if saque % 5 != 0:
+    print("por favor somente multiplo de 5")
+else: 
+    print("")
+    print('='*20)
+    print("")
+
+    cedula_50 = saque // 50 # 2
+    resto = saque % 50 # 35
+
+    cedula_20 = resto // 20 
+    resto = resto % 20
+
+    cedula_10 = resto // 10
+    resto = resto % 10
+
+    cedula_5 = resto // 5
+
+    print(f"Valor do saque: {saque}")
+    print(f"{cedula_50} Cedulas de 50 \n {cedula_20} Cedulas de 20 \n{cedula_10} Cedulas de 10 \n{cedula_5} Cedulas de 5 \n")
 
 
