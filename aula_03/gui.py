@@ -34,7 +34,8 @@ pyautogui.moveTo(756,635)
 
 # Enquanto estiver arrastando mudar para a página do Google Drive
 
-pyautogui.hotkey('alt','tab')
+pyautogui.hotkey('alt'
+                 ,'tab')
 
 # Soltar o arquivo dentro do Google Drive
 
