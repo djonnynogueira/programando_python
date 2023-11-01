@@ -13,22 +13,23 @@ try:
     
     # sql_cons = 'select * from tb_funcionarios'
 
-    sql = 'INSERT INTO tb_funcionarios (Nome, idade, cargo, salario, irpf) VALUES (%s, %s, %s, %s, %s)'
+    # sql = 'INSERT INTO tb_funcionarios (Nome, idade, cargo, salario, irpf) VALUES (%s, %s, %s, %s, %s)'
 
     cursor = conn_mysql.cursor()
     
-    # select = 'SELECT * FROM tb_funcionarios'
-    # cursor.execute(select)
+    cursor.execute("SELECT * FROM tb_funcionarios")
     
-    cursor.execute(sql, ['Mike', 41, 'Dev', 15000, 2600])
+    select = cursor.fetchall()
+    
+    for x in select:
+        print(x)
+    
     conn_mysql.commit()
 
-    conn_mysql.close()
-    
+    conn_mysql.close()    
    
-    print("Inserido com sucesso!")
-   
-    
+    print("Select gerado com sucesso!")
+       
 except Exception as e:
     print(e)
     
