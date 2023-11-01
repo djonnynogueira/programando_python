@@ -1,3 +1,10 @@
+# REQUIREMENTS
+# pip freeze > requirements.txt
+
+# Criando venv: py -m venv venv
+# Habilitando venv: . .\venv\Scripts\Activate
+# Desativando venv: deactivate
+
 import mysql.connector
 
 
@@ -32,3 +39,4 @@ try:
 except Exception as e:
     print(e)
     
+

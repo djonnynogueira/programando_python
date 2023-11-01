@@ -47,3 +47,10 @@ trabalho.consultar_usuario_por_id(11)
 # for usuario, senha in usuarios:
 #     trabalho.pegar_conexao() 
 #     trabalho.criar_usuario(usuario, senha)
+
+# REQUIREMENTS
+# pip freeze > requirements.txt
+
+# Criando venv: py -m venv venv
+# Habilitando venv: . .\venv\Scripts\Activate
+# Desativando venv: deactivate
