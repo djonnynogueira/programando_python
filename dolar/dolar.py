@@ -30,3 +30,10 @@ cotacao_dolar = site.find("span", class_="SwHCTb")
 print(f'Cotação do dólar hoje: {cotacao_dolar.get_text()}') # -> pega a informação em formato de texto (valor arredondado)
 
 print(f'Cotação do dólar hoje: {cotacao_dolar["data-value"]}') # -> busca a cotação do site (valor com mais casas decimais)
+
+input('Pressione qualquer tecla para sair...')
+
+
+# Instalando o pyinstaller:         pip install pyinstaller or py -m pip install pyinstaller
+# Criando o executável:             pyinstaller --onefile imc.py
+# Arquivo salvo dentro da pasta "dist"
